@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../../../images/Logo.svg";
 import "./Navigation.css";
 
@@ -10,16 +11,29 @@ const Navigation = () => {
       </div>
       <ul className="app__navbar-links">
         <li>
-          <a href="/home">Home</a>
+          <Link className="link" to="/">
+            Home
+          </Link>
         </li>
         <li>
-          <a href="/about">About</a>
+          <Link className="link" to="shop">
+            Shop
+          </Link>
         </li>
         <li>
-          <a href="/products">Products</a>
+          <Link className="link" to="orders">
+            Orders
+          </Link>
         </li>
         <li>
-          <a href="/contact">Contact</a>
+          <Link className="link" to="inventory">
+            Inventory
+          </Link>
+        </li>
+        <li>
+          <Link className="link" to="contact">
+            Contact
+          </Link>
         </li>
       </ul>
     </nav>

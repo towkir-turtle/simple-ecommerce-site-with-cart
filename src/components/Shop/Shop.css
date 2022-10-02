@@ -6,10 +6,37 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 40px;
-  padding: 100px 40px;
+  padding: 50px 40px;
 }
 .cart-container {
   background: rgba(255, 153, 0, 0.3);
-  position: sticky;
-  top: 0;
+}
+.cart-container .links {
+  display: flex;
+  flex-direction: column;
+}
+.cart-container .links .clear-cart-link button {
+  font-size: 17px;
+  color: #fff;
+  width: 232px;
+  height: 48px;
+  background: #ff3030;
+  border: 0;
+  border-radius: 4px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+.cart-container .links .review-order-link button {
+  font-size: 17px;
+  color: #fff;
+  width: 232px;
+  height: 48px;
+  background: #ff9900;
+  border: 0;
+  border-radius: 4px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.cart-container .links button .icon {
+  margin-left: 5px;
 }

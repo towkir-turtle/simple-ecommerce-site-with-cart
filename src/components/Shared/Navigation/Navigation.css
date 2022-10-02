@@ -17,7 +17,7 @@
 .app__navbar-links li:last-child {
   margin-right: 0;
 }
-.app__navbar-links li a {
+.app__navbar-links li .link {
   color: #fff;
   font-size: 17px;
 }
